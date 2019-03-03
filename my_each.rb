@@ -2,8 +2,8 @@ def my_each(arr)
   i = 0
   newarr = []
   while i < arr.length
-  newarr << yield
-  
+  yield arr[i]
+  newarr << arr[i]
   i = i + 1
 end
 newarr
